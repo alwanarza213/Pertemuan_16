@@ -1,0 +1,173 @@
+<html>
+    <head>
+        <title>Membuat Image Slider Menggunakan JQuery</title>
+        <meta name="description" content="Sederhana dan Sangat Powerful:Slide slider">
+        <link href="style.css" rel="stylesheet" type="text/css">
+
+        <!-- Instalasi font Lato dari Google, abaikan jika tidak terkoneksi internet -->
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+        <!-- Include jquery -->
+        <script src="./src/jquery-3.6.0.js"></script>
+        <script src="./src/jquery-migrate-1.2.1.min.js"></script>
+
+        <!-- Inluce the slider scripts -->
+        <script type="text/javascript" src="./src/jquery.simpleslider.js"></script>
+        <script type="text/javascript" src="./src/backstretch.js"></script>
+        <script type="text/javascript" src="./src/custom.js"></script>
+
+        <!-- Select2 -->
+        <link href="select2.min.css" rel="stylesheet" />
+        <script src="src/select2.js"></script>
+
+        <!-- Typed -->
+        <script src="src/typed.js"></script>
+
+        <!-- Water Ripples -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    </head>
+
+    <body>
+        <header id="top">
+            <div id="logo"><span class='logo'>Slider menggunakan JQuery</span><span class='dynamic'></span></div>
+        </header>
+
+        <div class='pagewrap'>
+            <div id="fb-root"></div>
+                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0" nonce="GGv3DhqL">
+                </script>
+
+            <div class="fb-like" data-href="https://www.facebook.com/ZiveraMusic" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+
+            <div class="githubbuttons">
+                <iframe src="http://ghbtns.com/github-btn.html?user=alwanarza213&repo=JQuery-Plugin&type=star&count=true"
+                allowtransparency="true" frameborder="0" scrolling="0" width="80" height="20"></iframe>
+                <iframe src="http://ghbtns.com/github-btn.html?user=alwanarza213&repo=JQuery-Plugin&type=fork&count=true"
+                allowtransparency="true" frameborder="0" scrolling="0" width="85" height="20"></iframe>
+                <iframe src="http://ghbtns.com/github-btn.html?user=alwanarza213&repo=JQuery-Plugin&type=follow"
+                allowtransparency="true" frameborder="0" scrolling="0" width="145" height="20"></iframe>
+            </div>
+
+            <div class='pageblock' id='fullscreen'>
+                <div class='slider'>
+                    <div class='slide' id="satu">
+                        <div class='slidecontent'>
+                            <span class="headersur">Contoh Select dan Water Ripples</span>
+                            <h1>SLIDE PERTAMA</h1>
+                            <p>Jquery Plugin Select2</p>
+                                <select
+                                    class="js-example-basic-single"
+                                    name="state"
+                                    style="width: 200px"
+                                >
+                                    <option value="KD">Koding</option>
+                                    <option value="GM">Gaming</option>
+                                    <option value="SM">Streaming</option>
+                                    <option value="JP">Eating</option>
+                                    <option value="EN">Blaming</option>
+                                </select>
+                            <div class="button" onclick="mainslider.nextSlide();">Lihat betapa sederhananya</div>
+                        </div>
+                    </div>
+
+                    <div class='slide' id="dua">
+                        <div class='slidecontent'>
+                            <span class="headersur">Typed Sederhana</span>
+                            <h1>SLIDE KEDUA</h1>
+                            <div class="text">
+                                <div class="typed" id="typed">
+                                    <h1 style="font-size: 56px">
+                                        Ayo
+                                        <span
+                                            class="element"
+                                            style="
+                                                color:greenyellow;
+                                                text-shadow: 2px 2px 4px black;
+                                            "
+                                        ></span>
+                                    </h1>
+                                </div>
+
+                                <div class="button" onclick="mainslider.nextSlide();">Sudah? Ayo Lanjutkan!</div> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='slide' id="tiga">
+                        <div class='slidecontent'>
+                            <span class="headersur">Sudah siap ?</span>
+                            <h1>Langkah Berikutnya</h1>
+                            <div class="text">
+                                <p>Masukkan kode ini di HTML, cek <a href="https://github.com/alwanarza213/JQuery-Plugin"
+                                target="_BLANK">Github README</a> Contoh HTML.</p>
+                                <xmp>
+                                    $(document).ready(function() {
+                                        $(".slider").simpleSlider();
+                                    });
+                                </xmp>
+
+                                <div class="button" onclick="mainslider.nextSlide();">Selesai? Lanjutkan lagi!</div>
+                            </div>
+                        </div>   
+                    </div>
+
+                    <div class='slide' id="empat">
+                        <div class='slidecontent'>
+                            <span class="headersur">Sudah Selesai</span>
+                            <h1>LIHAT</h1>
+                            <div class="text">
+                                <p>Slider Sudah Selesai, Mau lihat opsi yang lain?</p>
+                                <p>Ada methods, triggers dan tracker yang bisa dikonfigurasikan</p>
+
+                                <div class="button"><a href="https://github.com/alwanarza213/JQuery-Plugin"
+                                target="_BLANK">Cek</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='slide' id="lima">
+                        <div class='slidecontent'>
+                            <span class="headersur">Sudah dicoba?</span>
+                            <h1>Anda Keren</h1>
+                            <div class="text">
+                                <p>Cek disini kalau anda mau mencoba yang lain <a href="https://github.com/alwanarza213/JQuery-Plugin"
+                                target="_BLANK">Github README</a> Contoh HTML.</p>
+                                <xmp>
+                                    $(document).ready(function() {
+                                        $(".slider").simpleSlider();
+                                    });
+                                </xmp>
+
+                                <div class="button" onclick="mainslider.nextSlide();">Lanjut slide berikutnya</div>
+                            </div>
+                        </div>   
+                    </div>
+
+                    <div class='slide' id="enam">
+                        <div class='slidecontent'>
+                            <span class="headersur">Selamat Tinggal!</span>
+                            <h1>Goodbye</h1>
+                            <div class="text">
+                                <p>Jangan lupa meninggalkan jejak di <a href="https://github.com/alwanarza213/JQuery-Plugin"
+                                target="_BLANK">Github README</a> Contoh HTML.</p>
+                                <xmp>
+                                    $(document).ready(function() {
+                                        $(".slider").simpleSlider();
+                                    });
+                                </xmp>
+
+                                <div class="button" onclick="mainslider.nextSlide();">Kembali ke slide pertama</div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+
+            <div class="copy">
+                Project: <a href="https://www.facebook.com/alwanarza007/" rel="publisher">Alwan Arza</a>
+                    <a href="https://github.com/alwanarza213">Github: alwanarza213</a>
+            </div>
+
+        </div>
+    </body>
+</html>
